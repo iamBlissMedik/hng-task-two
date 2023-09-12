@@ -32,7 +32,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             {movie.title}
           </p>
           <p
-            className="text-gray-700 text-base py-2 "
+            className="text-gray-700 text-base py-2"
             data-testid="movie-release-date"
           >
             {movie.release_date}

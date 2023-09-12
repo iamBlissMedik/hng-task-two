@@ -17,7 +17,7 @@ const MovieCardDetails: React.FC<MovieCardDetailsProps> = ({ movie }) => {
         className="rounded-2xl h-[600px] w-full"
         alt={(movie?.title as string) || ""}
       />
-      <div className=" px-3 py-4  ">
+      <div className=" px-3 py-4">
         <div className=" lg:flex items-center font-bold text-base text-[18px] leading-[34px] lg:space-x-2 ">
           <h1 className="font-bold " data-testid="movie-title">
             {movie?.title}
