@@ -23,13 +23,17 @@ const Movie: React.FC<PageProps> = ({ params }) => {
   const [movie, setMovie] = useState();
   useEffect(() => {
     const getMovie = async () => {
-      const res = await axios(
-        `${server}/${params.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&page=1`
-      );
-      const movieRes = await res.data;
-      console.log(movieRes);
-      setMovie(movieRes);
-      setIsLoading(false);
+      try {
+        const res = await axios(
+          `${server}/${params.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&page=1`
+        );
+        const movieRes = await res.data;
+        console.log(movieRes);
+        setMovie(movieRes);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error);
+      }
     };
     getMovie();
   }, [params.id]);

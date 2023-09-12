@@ -8,7 +8,7 @@ const HeroSection = () => {
       <NavBar />
       {/* hero section */}
       <div
-        className="bg-cover  text-white  py-16 font-Dm_sans "
+        className="bg-cover  text-white  py-24 font-Dm_sans "
         style={{ backgroundImage: `url(${Poster.src})` }}
       >
         <div className=" container mx-auto ">
