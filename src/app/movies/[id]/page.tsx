@@ -28,7 +28,7 @@ const Movie: React.FC<PageProps> = ({ params }) => {
           `${server}/${params.id}?api_key=${process.env.NEXT_PUBLIC_API_KEY}&language=en-US&page=1`
         );
         const movieRes = await res.data;
-        console.log(movieRes);
+       
         setMovie(movieRes);
         setIsLoading(false);
       } catch (error) {

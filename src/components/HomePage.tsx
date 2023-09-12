@@ -28,7 +28,6 @@ const HomePage = () => {
     };
     getMovie();
   }, []);
-  console.log(movies);
 
   return (
     <div>

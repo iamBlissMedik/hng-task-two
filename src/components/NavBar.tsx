@@ -1,7 +1,5 @@
 "use client";
-import Image from "next/image";
-import Link from "next/link";
-import Logo from "../assets/tv.png";
+
 import { CiSearch } from "react-icons/ci";
 import { FaEquals } from "react-icons/fa";
 import { useState, useEffect } from "react";
@@ -30,7 +28,7 @@ const NavBar = () => {
       }   py-4 px-10  `}
     >
       <div className="mx-auto container  flex justify-between items-center font-Dm_sans  ">
-        <LogoP Logo={Logo} />
+        <LogoP Logo={"/tv.png"} />
 
         <form>
           <div className="hidden sm:flex items-center relative  ">

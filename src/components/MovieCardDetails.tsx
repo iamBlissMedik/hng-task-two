@@ -13,6 +13,7 @@ const MovieCardDetails: React.FC<MovieCardDetailsProps> = ({ movie }) => {
         src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
         width={700}
         height={800}
+        priority
         className="rounded-2xl h-[600px] w-full"
         alt={(movie?.title as string) || ""}
       />

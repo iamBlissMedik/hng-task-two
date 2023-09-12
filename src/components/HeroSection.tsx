@@ -1,5 +1,5 @@
 import NavBar from "./NavBar";
-import Poster from "../assets/Poster.png";
+
 import { FaPlayCircle } from "react-icons/fa";
 import Image from "next/image";
 
@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* hero section */}
       <div className="bg-cover relative text-white px-10 py-24 font-Dm_sans ">
         <Image
-          src={Poster.src}
+          src={"/Poster.png"}
           quality={40}
           fill
           objectFit="cover"
@@ -36,7 +36,6 @@ const HeroSection = () => {
               <span> WATCH TRAILER</span>
             </button>
           </div>
-          
         </div>
       </div>
     </div>

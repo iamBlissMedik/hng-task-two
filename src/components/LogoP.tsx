@@ -1,7 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 type LogoProps = {
-  Logo: StaticImageData;
+  Logo: string;
 };
 const LogoP: React.FC<LogoProps> = ({ Logo }) => {
   return (
