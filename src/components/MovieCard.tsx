@@ -21,6 +21,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             width={700}
             height={800}
             blurDataURL={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+            priority
             alt={movie.title}
             data-testid="movie-poster"
           />
