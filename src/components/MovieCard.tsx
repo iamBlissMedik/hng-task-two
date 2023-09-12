@@ -26,7 +26,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
             data-testid="movie-poster"
           />
           <p
-            className="font-bold text-xl text-center h-full  "
+            className="font-bold text-xl text-center h-full"
             data-testid="movie-title"
           >
             {movie.title}
