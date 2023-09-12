@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import FeaturedMovie from "./FeaturedMovie";
 import HeroSection from "./HeroSection";
-import NavBar from "./NavBar";
 import axios from "axios";
 import { server } from "../../config";
 import { IMovie } from "@/types/IMovie";

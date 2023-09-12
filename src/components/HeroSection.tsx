@@ -9,7 +9,14 @@ const HeroSection = () => {
       <NavBar />
       {/* hero section */}
       <div className="bg-cover relative text-white  py-24 font-Dm_sans ">
-        <Image src={Poster.src} fill objectFit="cover" alt="title" priority />
+        <Image
+          src={Poster.src}
+          quality={40}
+          fill
+          objectFit="cover"
+          alt="johnWick"
+          priority
+        />
         <div className=" container mx-auto relative">
           <div className="w-[400px]  flex flex-col gap-3 ">
             <h1 className="text-5xl leading-[56px] font-bold">
