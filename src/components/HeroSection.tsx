@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div>
       <NavBar />
       {/* hero section */}
-      <div className="bg-cover relative text-white  py-24 font-Dm_sans ">
+      <div className="bg-cover relative text-white px-10 py-24 font-Dm_sans ">
         <Image
           src={Poster.src}
           quality={40}
@@ -36,7 +36,7 @@ const HeroSection = () => {
               <span> WATCH TRAILER</span>
             </button>
           </div>
-          I
+          
         </div>
       </div>
     </div>

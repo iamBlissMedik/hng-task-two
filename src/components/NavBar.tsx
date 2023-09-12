@@ -27,7 +27,7 @@ const NavBar = () => {
     <div
       className={` z-10 text-white w-full fixed top-0 ${
         navBar ? "bg-black" : ""
-      }   py-4  `}
+      }   py-4 px-10  `}
     >
       <div className="mx-auto container  flex justify-between items-center font-Dm_sans  ">
         <LogoP Logo={Logo} />
