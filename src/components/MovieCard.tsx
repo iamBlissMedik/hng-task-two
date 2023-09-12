@@ -43,7 +43,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
       <button
         onClick={() => setLiked(!liked)}
         className={` absolute top-3 text-2xl right-2 text-red-500 opacity-50 bg-white rounded-full p-[1px] ${
-          liked ? "opacity-100" : "opacity-50"
+          liked ? "opacity-100" : "opacity-10"
         }`}
       >
         ❤️
