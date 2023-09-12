@@ -1,18 +1,17 @@
 import NavBar from "./NavBar";
 import Poster from "../assets/Poster.png";
 import { FaPlayCircle } from "react-icons/fa";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
     <div>
       <NavBar />
       {/* hero section */}
-      <div
-        className="bg-cover  text-white  py-24 font-Dm_sans "
-        style={{ backgroundImage: `url(${Poster.src})` }}
-      >
-        <div className=" container mx-auto ">
-          <div className="w-[400px] flex flex-col gap-3 ">
+      <div className="bg-cover relative text-white  py-24 font-Dm_sans ">
+        <Image src={Poster.src} fill objectFit="cover" alt="title" priority />
+        <div className=" container mx-auto relative">
+          <div className="w-[400px]  flex flex-col gap-3 ">
             <h1 className="text-5xl leading-[56px] font-bold">
               John Wick 3: Parabellum
             </h1>
@@ -30,6 +29,7 @@ const HeroSection = () => {
               <span> WATCH TRAILER</span>
             </button>
           </div>
+          I
         </div>
       </div>
     </div>
