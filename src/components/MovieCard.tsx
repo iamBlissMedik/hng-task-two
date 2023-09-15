@@ -11,7 +11,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
   const [liked, setLiked] = useState(false);
   return (
     <div className="relative">
-      <div data-testid="movie-card">
+      <div data-testid="movie-card" className="h-full">
         <Link href={`/movies/${movie.id}`} passHref>
           <div className="bg-white  rounded-md cursor-pointer h-full flex flex-col gap-3 items-center text-center relative shadow-md">
             <Image
