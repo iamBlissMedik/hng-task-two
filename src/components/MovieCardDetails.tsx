@@ -8,7 +8,7 @@ type MovieCardDetailsProps = {
 
 const MovieCardDetails: React.FC<MovieCardDetailsProps> = ({ movie }) => {
   return (
-    <div className="px-3 flex flex-col gap-3 h-full">
+    <div className="px-3 flex flex-col gap-3 h-full ">
       <Image
         src={`https://image.tmdb.org/t/p/w500${movie?.poster_path}`}
         width={700}
